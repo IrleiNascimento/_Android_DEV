@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">PrevisaoDoTempo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_tela_inicial">App Bons Tempos</string>
+    <string name="opacoaCidades">Escolha a cidade</string>
+
+</resources>

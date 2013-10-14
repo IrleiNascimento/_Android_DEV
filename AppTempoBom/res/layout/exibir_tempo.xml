@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exibir_Tempo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange" >
+
+
+
+
+        <TextView
+            android:id="@+id/regiaotxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cidade, pais"
+            android:textColorLink="@color/blue"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/valorDatatxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="valorData"
+            android:textSize="14dp" />
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray" >
+
+        <ImageView
+            android:id="@+id/imageTempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp" />
+
+
+        <TextView
+            android:id="@+id/resumoTempotxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="resumo do tempo" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Máxima :"
+            android:textColor="@color/cinza" />
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/maximaGraustxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="valor em graus Cº"
+            android:textColor="@color/cinza" />
+
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miníma:"
+            android:textColor="@color/cinza" />
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/minimaGraustxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="valor em graus cº"
+            android:textColor="@color/cinza" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Velocidade do vento:"
+            android:textColor="@color/cinza" />
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/velocidadeVentotxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="valor vl"
+            android:textColor="@color/cinza" />
+
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Direção do vento:"
+            android:textColor="@color/cinza" />
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/direcaoVentotxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="valor direção do vento"
+            android:textColor="@color/cinza" />
+
+    </TableRow>
+
+</LinearLayout>

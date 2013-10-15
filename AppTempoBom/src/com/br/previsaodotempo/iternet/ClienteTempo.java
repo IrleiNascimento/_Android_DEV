@@ -63,12 +63,11 @@ public class ClienteTempo {
 				result[1] = toString(instream);//o metodo toString "varre os bytes do texto json recebido e devolve um String limpa que agoga esta´ra pronta para o  JSONObject "
 				instream.close();//depois que a string foi limpa, o InputStream é fechado
 				// log para debug, importante para ser verificar erros 
-				Log.i("get", "Result from post JsonPost : " + result[0] + " : "
-						+ result[1]);
+				Log.i("GET", "STATUS" + result[0] + "RESULTADO DO GET  JOSN OU XML"+ result[1]);
 			}
 		} catch (Exception e) {// se tudo de errado
 			// log para debug
-			Log.e("NGVL", "Falha ao acessar Web service", e);
+			Log.e("ERRO", "Falha ao acessar Web service", e);
 			result[0] = "0";
 			result[1] = "Falha de rede!";	//como houve falha na conexão, o lugar onde seriao json, passa a ser a mensagem da falha		
 		}

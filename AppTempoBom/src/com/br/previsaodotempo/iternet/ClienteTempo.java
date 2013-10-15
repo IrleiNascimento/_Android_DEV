@@ -91,7 +91,7 @@ public class ClienteTempo {
 	
 	
         
-        /*esse metos tem as mesmas funcionalidade do metodo acima, porem  retorna um JSONObject  e não JSONArray */
+        /*esse metodo tem as mesmas funcionalidade do metodo acima, porem  retorna um JSONObject  e não JSONArray */
 	public JSONObject getRequestJSONObject(String url) throws Exception {
 		String[] resposta = GET(url);
 		if (resposta[0].equals(ClienteWebTempo.STATUS_HTTP)) {

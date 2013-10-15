@@ -26,7 +26,7 @@ import com.br.previsaodotempo.converte.TempoDaoConverte;
 public class PrevisaoDoTempoGet extends AsyncTask<Void, String, Void> {
 
 	private String url; // endere�o da api com a cidade escolhida
-	private Context context; // referancia a tela atual que exibir� os dados
+	private Context context; // referancia a tela atual que exibiráos dados
 	private LinearLayout painel;// onde serã mostrado a prvis�o
 	private ProgressDialog progress;// animação de conex�o
 	private JSONObject jsonObject;// recebe o aquivo json da api
@@ -75,8 +75,8 @@ public class PrevisaoDoTempoGet extends AsyncTask<Void, String, Void> {
 	public void consulta() {
 		ClienteTempo cli = new ClienteTempo();
 
-		// tente se houver falha o processo ser� abostado e uma mensagem de
-		// servi�o indispon�vel ser� exibida
+		// tente se houver falha o processo ser� abosrado e uma mensagem de
+		// servi�o indispon�vel ssrá xibida
 		try {
 			// recebendo o resultado do serviço da api
 			jsonObject = cli.getRequestJSONObject(this.url);

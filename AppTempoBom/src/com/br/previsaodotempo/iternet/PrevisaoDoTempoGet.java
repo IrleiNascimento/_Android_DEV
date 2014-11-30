@@ -25,13 +25,13 @@ import com.br.previsaodotempo.converte.TempoDaoConverte;
  */                                  
 public class PrevisaoDoTempoGet extends AsyncTask<Void, String, Void> {
 
-	private String url; // endere�o da api com a cidade escolhida
+	private String url; // endereço da api com a cidade escolhida
 	private Context context; // referancia a tela atual que exibiráos dados
-	private LinearLayout painel;// onde serã mostrado a prvis�o
-	private ProgressDialog progress;// animação de conex�o
+	private LinearLayout painel;// onde serã mostrado a previsão
+	private ProgressDialog progress;// animação de conexão
 	private JSONObject jsonObject;// recebe o aquivo json da api
 
-	private JSONArray tempo; // guarda todas as informa��s do n� "weather"
+	private JSONArray tempo; // guarda todas as informações do nó "weather"
 	private JSONArray tempoAtual;// guarda todas as informa��s do n�
 									// "current_condition"
 	private JSONArray infoRegiao;// guarda todas as informa��s do n� "request"
@@ -46,7 +46,7 @@ public class PrevisaoDoTempoGet extends AsyncTask<Void, String, Void> {
 
 	@Override
 	protected void onPreExecute() {
-		// animaçao exibida enquanto conecta-se ao servi�o
+		// animaçao exibida enquanto conecta-se ao serviço
 		progress = new ProgressDialog(this.context);
 		progress.setMessage("Conectando...");
 		progress.show();
@@ -75,8 +75,8 @@ public class PrevisaoDoTempoGet extends AsyncTask<Void, String, Void> {
 	public void consulta() {
 		ClienteTempo cli = new ClienteTempo();
 
-		// tente se houver falha o processo ser� abosrado e uma mensagem de
-		// servi�o indispon�vel ssrá xibida
+		// tente se houver falha o processo ser� abortadou e ma mensagem de
+		// serviçoindisponivel ssrá xibida
 		try {
 			// recebendo o resultado do serviço da api
 			jsonObject = cli.getRequestJSONObject(this.url);
@@ -101,9 +101,9 @@ public class PrevisaoDoTempoGet extends AsyncTask<Void, String, Void> {
 	}
 
 	public boolean validar() {
-		// metodo respons�vel por exibir na tela a mensagem de erro
+		// metodo responsável por exibir na tela a mensagem de erro
 		if (jsonObject == null) {
-			Toast.makeText(context, "Serviço Indispon�vel...",
+			Toast.makeText(context, "Serviço Indisponível...",
 					Toast.LENGTH_LONG).show();
 			return false;
 		}
@@ -119,7 +119,7 @@ public class PrevisaoDoTempoGet extends AsyncTask<Void, String, Void> {
 			 */
 			if (tempo != null) {
 				/*
-				 * em um JsonArray existe varios Previsoes de tempo para seram
+				 * em um JsonArray existe varios Previsoes de tempo para serem
 				 * exibidas ser� criado um Tempo para cada item encontrado no
 				 * JsonArray e adicionado em uma lista de Tempo
 				 */
@@ -139,14 +139,14 @@ public class PrevisaoDoTempoGet extends AsyncTask<Void, String, Void> {
 					LayoutInflater inflater = (LayoutInflater) this.context
 							.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 					/*
-					 * depois de pegar o xml passamos o contrele dela para uma
+					 * depois de pegar o xml passamos o controle dela para uma
 					 * view
 					 */
 					View view = inflater.inflate(R.layout.exibir_tempo, null);
 
 					/*
-					 * pegamos agora todos os componetes da tela que ser�
-					 * respons�vel por mostra ainforma��o
+					 * pegamos agora todos os componentes da tela que ser�
+					 * respons�vel por mostra a informa��o
 					 */
 					TextView regiao = (TextView) view
 							.findViewById(R.id.regiaotxt);
